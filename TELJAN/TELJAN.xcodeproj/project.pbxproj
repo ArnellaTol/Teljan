@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C5AB5412AB6F5BE00D6818D /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AB5402AB6F5BE00D6818D /* Letter.swift */; };
+		0C5AB5452AB708FE00D6818D /* Page2.2Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AB5442AB708FE00D6818D /* Page2.2Generator.swift */; };
+		0C5AB5472AB712D600D6818D /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AB5462AB712D600D6818D /* CheckButton.swift */; };
+		0C5AB5492AB7141E00D6818D /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AB5482AB7141E00D6818D /* RefreshButton.swift */; };
+		0C5AB54B2AB725B300D6818D /* Page2.1Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AB54A2AB725B300D6818D /* Page2.1Dictionary.swift */; };
+		0C84ACFC2AA48B9900B56D84 /* TelzhanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84ACFB2AA48B9900B56D84 /* TelzhanApp.swift */; };
+		0C84ACFE2AA48B9900B56D84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84ACFD2AA48B9900B56D84 /* ContentView.swift */; };
+		0C84AD002AA48B9A00B56D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C84ACFF2AA48B9A00B56D84 /* Assets.xcassets */; };
+		0C84AD032AA48B9A00B56D84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C84AD022AA48B9A00B56D84 /* Preview Assets.xcassets */; };
+		0C84AD0D2AA48B9A00B56D84 /* TelzhanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD0C2AA48B9A00B56D84 /* TelzhanTests.swift */; };
+		0C84AD172AA48B9A00B56D84 /* TelzhanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD162AA48B9A00B56D84 /* TelzhanUITests.swift */; };
+		0C84AD192AA48B9A00B56D84 /* TelzhanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD182AA48B9A00B56D84 /* TelzhanUITestsLaunchTests.swift */; };
+		0C84AD272AA48E9400B56D84 /* TelzhanLanguageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD262AA48E9400B56D84 /* TelzhanLanguageMenu.swift */; };
+		0C84AD292AA4926B00B56D84 /* Button1Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD282AA4926B00B56D84 /* Button1Page.swift */; };
+		0C84AD2B2AA497C900B56D84 /* Page2DictionaryGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD2A2AA497C900B56D84 /* Page2DictionaryGenerator.swift */; };
+		0C84AD2E2AA49C6700B56D84 /* Page3Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD2D2AA49C6700B56D84 /* Page3Translator.swift */; };
+		0C84AD302AA4A26A00B56D84 /* Page4AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD2F2AA4A26A00B56D84 /* Page4AboutApp.swift */; };
+		0CA314902AD0618100775B95 /* QuestionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3148F2AD0618100775B95 /* QuestionButton.swift */; };
+		0CBEC4F82AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4F62AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld */; };
+		0CBEC4FA2AADC13500C5AF8D /* DataBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4F92AADC13500C5AF8D /* DataBaseController.swift */; };
+		0CBEC4FC2AADE43D00C5AF8D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4FB2AADE43D00C5AF8D /* Extentions.swift */; };
+		0CBEC4FE2AADE4CD00C5AF8D /* Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4FD2AADE4CD00C5AF8D /* Back.swift */; };
+		0CBEC5002AADED1600C5AF8D /* Page1Alphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4FF2AADED1600C5AF8D /* Page1Alphabet.swift */; };
+		0CD815172B1CC0B300F86CA9 /* GPT_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD815162B1CC0B300F86CA9 /* GPT_Test.swift */; };
+		0CD8151A2B1CD1FA00F86CA9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0CD815192B1CD1FA00F86CA9 /* Alamofire */; };
+		0CD8151C2B1CD22500F86CA9 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8151B2B1CD22500F86CA9 /* OpenAIService.swift */; };
+		0CDABAD62AD9A07A008642B6 /* ButtonArrowDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDABAD52AD9A07A008642B6 /* ButtonArrowDown.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C84AD092AA48B9A00B56D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C84ACF02AA48B9800B56D84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C84ACF72AA48B9800B56D84;
+			remoteInfo = Telzhan;
+		};
+		0C84AD132AA48B9A00B56D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C84ACF02AA48B9800B56D84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C84ACF72AA48B9800B56D84;
+			remoteInfo = Telzhan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C5AB5402AB6F5BE00D6818D /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		0C5AB5442AB708FE00D6818D /* Page2.2Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.2Generator.swift; sourceTree = "<group>"; };
+		0C5AB5462AB712D600D6818D /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		0C5AB5482AB7141E00D6818D /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		0C5AB54A2AB725B300D6818D /* Page2.1Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2.1Dictionary.swift; sourceTree = "<group>"; };
+		0C84ACF82AA48B9900B56D84 /* TELJAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TELJAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C84ACFB2AA48B9900B56D84 /* TelzhanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelzhanApp.swift; sourceTree = "<group>"; };
+		0C84ACFD2AA48B9900B56D84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0C84ACFF2AA48B9A00B56D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C84AD022AA48B9A00B56D84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0C84AD082AA48B9A00B56D84 /* TelzhanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelzhanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C84AD0C2AA48B9A00B56D84 /* TelzhanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelzhanTests.swift; sourceTree = "<group>"; };
+		0C84AD122AA48B9A00B56D84 /* TelzhanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelzhanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C84AD162AA48B9A00B56D84 /* TelzhanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelzhanUITests.swift; sourceTree = "<group>"; };
+		0C84AD182AA48B9A00B56D84 /* TelzhanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelzhanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C84AD262AA48E9400B56D84 /* TelzhanLanguageMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelzhanLanguageMenu.swift; sourceTree = "<group>"; };
+		0C84AD282AA4926B00B56D84 /* Button1Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button1Page.swift; sourceTree = "<group>"; };
+		0C84AD2A2AA497C900B56D84 /* Page2DictionaryGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2DictionaryGenerator.swift; sourceTree = "<group>"; };
+		0C84AD2D2AA49C6700B56D84 /* Page3Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3Translator.swift; sourceTree = "<group>"; };
+		0C84AD2F2AA4A26A00B56D84 /* Page4AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4AboutApp.swift; sourceTree = "<group>"; };
+		0CA3148F2AD0618100775B95 /* QuestionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionButton.swift; sourceTree = "<group>"; };
+		0CBEC4F72AADBF4300C5AF8D /* DataBaseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBaseModel.xcdatamodel; sourceTree = "<group>"; };
+		0CBEC4F92AADC13500C5AF8D /* DataBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseController.swift; sourceTree = "<group>"; };
+		0CBEC4FB2AADE43D00C5AF8D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		0CBEC4FD2AADE4CD00C5AF8D /* Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back.swift; sourceTree = "<group>"; };
+		0CBEC4FF2AADED1600C5AF8D /* Page1Alphabet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1Alphabet.swift; sourceTree = "<group>"; };
+		0CD815162B1CC0B300F86CA9 /* GPT_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPT_Test.swift; sourceTree = "<group>"; };
+		0CD8151B2B1CD22500F86CA9 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		0CDABAD52AD9A07A008642B6 /* ButtonArrowDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonArrowDown.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C84ACF52AA48B9800B56D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CD8151A2B1CD1FA00F86CA9 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C84AD052AA48B9A00B56D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C84AD0F2AA48B9A00B56D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C84ACEF2AA48B9800B56D84 = {
+			isa = PBXGroup;
+			children = (
+				0C84ACFA2AA48B9900B56D84 /* Telzhan */,
+				0C84AD0B2AA48B9A00B56D84 /* TelzhanTests */,
+				0C84AD152AA48B9A00B56D84 /* TelzhanUITests */,
+				0C84ACF92AA48B9900B56D84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C84ACF92AA48B9900B56D84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C84ACF82AA48B9900B56D84 /* TELJAN.app */,
+				0C84AD082AA48B9A00B56D84 /* TelzhanTests.xctest */,
+				0C84AD122AA48B9A00B56D84 /* TelzhanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C84ACFA2AA48B9900B56D84 /* Telzhan */ = {
+			isa = PBXGroup;
+			children = (
+				0C84ACFB2AA48B9900B56D84 /* TelzhanApp.swift */,
+				0C84ACFD2AA48B9900B56D84 /* ContentView.swift */,
+				0C84AD2C2AA497DE00B56D84 /* Pages */,
+				0C84AD252AA48E6200B56D84 /* Components */,
+				0C84ACFF2AA48B9A00B56D84 /* Assets.xcassets */,
+				0C84AD012AA48B9A00B56D84 /* Preview Content */,
+				0CBEC4F62AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld */,
+				0CBEC4F92AADC13500C5AF8D /* DataBaseController.swift */,
+				0CBEC4FB2AADE43D00C5AF8D /* Extentions.swift */,
+				0CD815162B1CC0B300F86CA9 /* GPT_Test.swift */,
+				0CD8151B2B1CD22500F86CA9 /* OpenAIService.swift */,
+			);
+			path = Telzhan;
+			sourceTree = "<group>";
+		};
+		0C84AD012AA48B9A00B56D84 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0C84AD022AA48B9A00B56D84 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C84AD0B2AA48B9A00B56D84 /* TelzhanTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C84AD0C2AA48B9A00B56D84 /* TelzhanTests.swift */,
+			);
+			path = TelzhanTests;
+			sourceTree = "<group>";
+		};
+		0C84AD152AA48B9A00B56D84 /* TelzhanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C84AD162AA48B9A00B56D84 /* TelzhanUITests.swift */,
+				0C84AD182AA48B9A00B56D84 /* TelzhanUITestsLaunchTests.swift */,
+			);
+			path = TelzhanUITests;
+			sourceTree = "<group>";
+		};
+		0C84AD252AA48E6200B56D84 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0C84AD262AA48E9400B56D84 /* TelzhanLanguageMenu.swift */,
+				0C84AD282AA4926B00B56D84 /* Button1Page.swift */,
+				0CBEC4FD2AADE4CD00C5AF8D /* Back.swift */,
+				0C5AB5402AB6F5BE00D6818D /* Letter.swift */,
+				0C5AB5462AB712D600D6818D /* CheckButton.swift */,
+				0C5AB5482AB7141E00D6818D /* RefreshButton.swift */,
+				0CA3148F2AD0618100775B95 /* QuestionButton.swift */,
+				0CDABAD52AD9A07A008642B6 /* ButtonArrowDown.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0C84AD2C2AA497DE00B56D84 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				0CBEC4FF2AADED1600C5AF8D /* Page1Alphabet.swift */,
+				0C84AD2A2AA497C900B56D84 /* Page2DictionaryGenerator.swift */,
+				0C5AB54A2AB725B300D6818D /* Page2.1Dictionary.swift */,
+				0C5AB5442AB708FE00D6818D /* Page2.2Generator.swift */,
+				0C84AD2D2AA49C6700B56D84 /* Page3Translator.swift */,
+				0C84AD2F2AA4A26A00B56D84 /* Page4AboutApp.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C84ACF72AA48B9800B56D84 /* TELJAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C84AD1C2AA48B9A00B56D84 /* Build configuration list for PBXNativeTarget "TELJAN" */;
+			buildPhases = (
+				0C84ACF42AA48B9800B56D84 /* Sources */,
+				0C84ACF52AA48B9800B56D84 /* Frameworks */,
+				0C84ACF62AA48B9800B56D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TELJAN;
+			packageProductDependencies = (
+				0CD815192B1CD1FA00F86CA9 /* Alamofire */,
+			);
+			productName = Telzhan;
+			productReference = 0C84ACF82AA48B9900B56D84 /* TELJAN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C84AD072AA48B9A00B56D84 /* TelzhanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C84AD1F2AA48B9A00B56D84 /* Build configuration list for PBXNativeTarget "TelzhanTests" */;
+			buildPhases = (
+				0C84AD042AA48B9A00B56D84 /* Sources */,
+				0C84AD052AA48B9A00B56D84 /* Frameworks */,
+				0C84AD062AA48B9A00B56D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C84AD0A2AA48B9A00B56D84 /* PBXTargetDependency */,
+			);
+			name = TelzhanTests;
+			productName = TelzhanTests;
+			productReference = 0C84AD082AA48B9A00B56D84 /* TelzhanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C84AD112AA48B9A00B56D84 /* TelzhanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C84AD222AA48B9A00B56D84 /* Build configuration list for PBXNativeTarget "TelzhanUITests" */;
+			buildPhases = (
+				0C84AD0E2AA48B9A00B56D84 /* Sources */,
+				0C84AD0F2AA48B9A00B56D84 /* Frameworks */,
+				0C84AD102AA48B9A00B56D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C84AD142AA48B9A00B56D84 /* PBXTargetDependency */,
+			);
+			name = TelzhanUITests;
+			productName = TelzhanUITests;
+			productReference = 0C84AD122AA48B9A00B56D84 /* TelzhanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C84ACF02AA48B9800B56D84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0C84ACF72AA48B9800B56D84 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					0C84AD072AA48B9A00B56D84 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C84ACF72AA48B9800B56D84;
+					};
+					0C84AD112AA48B9A00B56D84 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 0C84ACF72AA48B9800B56D84;
+					};
+				};
+			};
+			buildConfigurationList = 0C84ACF32AA48B9800B56D84 /* Build configuration list for PBXProject "TELJAN" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C84ACEF2AA48B9800B56D84;
+			packageReferences = (
+				0CD815182B1CD1FA00F86CA9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 0C84ACF92AA48B9900B56D84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C84ACF72AA48B9800B56D84 /* TELJAN */,
+				0C84AD072AA48B9A00B56D84 /* TelzhanTests */,
+				0C84AD112AA48B9A00B56D84 /* TelzhanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C84ACF62AA48B9800B56D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C84AD032AA48B9A00B56D84 /* Preview Assets.xcassets in Resources */,
+				0C84AD002AA48B9A00B56D84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C84AD062AA48B9A00B56D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C84AD102AA48B9A00B56D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C84ACF42AA48B9800B56D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDABAD62AD9A07A008642B6 /* ButtonArrowDown.swift in Sources */,
+				0CBEC4F82AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld in Sources */,
+				0CBEC4FE2AADE4CD00C5AF8D /* Back.swift in Sources */,
+				0CBEC4FA2AADC13500C5AF8D /* DataBaseController.swift in Sources */,
+				0CBEC4FC2AADE43D00C5AF8D /* Extentions.swift in Sources */,
+				0C84AD2B2AA497C900B56D84 /* Page2DictionaryGenerator.swift in Sources */,
+				0C84AD302AA4A26A00B56D84 /* Page4AboutApp.swift in Sources */,
+				0C5AB5412AB6F5BE00D6818D /* Letter.swift in Sources */,
+				0C84AD272AA48E9400B56D84 /* TelzhanLanguageMenu.swift in Sources */,
+				0C84AD2E2AA49C6700B56D84 /* Page3Translator.swift in Sources */,
+				0C5AB5492AB7141E00D6818D /* RefreshButton.swift in Sources */,
+				0C84ACFE2AA48B9900B56D84 /* ContentView.swift in Sources */,
+				0CBEC5002AADED1600C5AF8D /* Page1Alphabet.swift in Sources */,
+				0C84AD292AA4926B00B56D84 /* Button1Page.swift in Sources */,
+				0CD8151C2B1CD22500F86CA9 /* OpenAIService.swift in Sources */,
+				0C84ACFC2AA48B9900B56D84 /* TelzhanApp.swift in Sources */,
+				0C5AB5472AB712D600D6818D /* CheckButton.swift in Sources */,
+				0CA314902AD0618100775B95 /* QuestionButton.swift in Sources */,
+				0C5AB5452AB708FE00D6818D /* Page2.2Generator.swift in Sources */,
+				0C5AB54B2AB725B300D6818D /* Page2.1Dictionary.swift in Sources */,
+				0CD815172B1CC0B300F86CA9 /* GPT_Test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C84AD042AA48B9A00B56D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C84AD0D2AA48B9A00B56D84 /* TelzhanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C84AD0E2AA48B9A00B56D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C84AD172AA48B9A00B56D84 /* TelzhanUITests.swift in Sources */,
+				0C84AD192AA48B9A00B56D84 /* TelzhanUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C84AD0A2AA48B9A00B56D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C84ACF72AA48B9800B56D84 /* TELJAN */;
+			targetProxy = 0C84AD092AA48B9A00B56D84 /* PBXContainerItemProxy */;
+		};
+		0C84AD142AA48B9A00B56D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C84ACF72AA48B9800B56D84 /* TELJAN */;
+			targetProxy = 0C84AD132AA48B9A00B56D84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C84AD1A2AA48B9A00B56D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C84AD1B2AA48B9A00B56D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C84AD1D2AA48B9A00B56D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Telzhan/Preview Content\"";
+				DEVELOPMENT_TEAM = NKSKHSHXX3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TELJAN;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = arnella.Telzhan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C84AD1E2AA48B9A00B56D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Telzhan/Preview Content\"";
+				DEVELOPMENT_TEAM = NKSKHSHXX3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TELJAN;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = arnella.Telzhan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C84AD202AA48B9A00B56D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NKSKHSHXX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arnella.TelzhanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telzhan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Telzhan";
+			};
+			name = Debug;
+		};
+		0C84AD212AA48B9A00B56D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NKSKHSHXX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arnella.TelzhanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telzhan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Telzhan";
+			};
+			name = Release;
+		};
+		0C84AD232AA48B9A00B56D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NKSKHSHXX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arnella.TelzhanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Telzhan;
+			};
+			name = Debug;
+		};
+		0C84AD242AA48B9A00B56D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NKSKHSHXX3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = arnella.TelzhanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Telzhan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C84ACF32AA48B9800B56D84 /* Build configuration list for PBXProject "TELJAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C84AD1A2AA48B9A00B56D84 /* Debug */,
+				0C84AD1B2AA48B9A00B56D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C84AD1C2AA48B9A00B56D84 /* Build configuration list for PBXNativeTarget "TELJAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C84AD1D2AA48B9A00B56D84 /* Debug */,
+				0C84AD1E2AA48B9A00B56D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C84AD1F2AA48B9A00B56D84 /* Build configuration list for PBXNativeTarget "TelzhanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C84AD202AA48B9A00B56D84 /* Debug */,
+				0C84AD212AA48B9A00B56D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C84AD222AA48B9A00B56D84 /* Build configuration list for PBXNativeTarget "TelzhanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C84AD232AA48B9A00B56D84 /* Debug */,
+				0C84AD242AA48B9A00B56D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0CD815182B1CD1FA00F86CA9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0CD815192B1CD1FA00F86CA9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CD815182B1CD1FA00F86CA9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0CBEC4F62AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0CBEC4F72AADBF4300C5AF8D /* DataBaseModel.xcdatamodel */,
+			);
+			currentVersion = 0CBEC4F72AADBF4300C5AF8D /* DataBaseModel.xcdatamodel */;
+			path = DataBaseModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0C84ACF02AA48B9800B56D84 /* Project object */;
+}
