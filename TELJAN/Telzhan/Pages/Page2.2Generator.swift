@@ -11,17 +11,47 @@ import Combine
 struct Page2_2Generator: View {
     
     var cognates: [Word] = [
-        Word(kzWord: "Алгоритм", qsWord: "Algorithm", enWord: "Algorithm", kzDef: "Математикалық нұсқаулар немесе ережелер жинағы, әсіресе компьютерге берілген жағдайда, тапсырманың жауабын есептеуге көмектеседі", qsDef: "Matematikalyq nūsqaular nemese erejeler jinağy, äsırese kömpüterge berılgen jağdaida, tapsyrmanyñ jauabyn esepteuge kömektesedı", enDef: "A set of mathematical instructions or rules that, especially if given to a computer, will help to calculate an answer to a problem"),
-        Word(kzWord: "Бустинг", qsWord: "Boosting", enWord: "Boosting", kzDef: "Бір нәрсе жақсаратын немесе көбейетін жағдай", qsDef: "Bır närse jaqsaratyn nemese köbeietın jağdai", enDef: "An occasion when something is improved or increased"),
-        Word(kzWord: "Эмиттер", qsWord: "Emitter", enWord: "Emitter", kzDef: "Жарықты, шуды немесе затты, әсіресе көмірқышқыл газын сәулелендіретін (= жіберетін) нәрсе", qsDef: "Jaryqty, şudy nemese zatty, äsırese kömırqyşqyl gazyn säulelendıretın (= jıberetın) närse", enDef: "Something that emits (= sends out) light, a noise, or a substance, especially the gas carbon dioxide"),
-        Word(kzWord: "Гистограмма", qsWord: "Histogram", enWord: "Histogram", kzDef: "Салмақ, биіктік, уақыт және т.б. ауқымдарды немесе жиіліктерді көрсету үшін әртүрлі биіктіктегі тік бағандарды пайдаланатын математикалық кескін", qsDef: "Salmaq, biıktık, uaqyt jäne t.b. auqymdardy nemese jiılıkterdı körsetu üşın ärtürlı biıktıktegı tık bağandardy paidalanatyn matematikalyq keskın", enDef: "A mathematical picture that uses vertical columns of different heights to show ranges of weight, height, time, etc. or frequencies"),
-        Word(kzWord: "Параллель", qsWord: "Parallel", enWord: "Parallel", kzDef: "Басқа бір нәрсеге өте ұқсас немесе екі нәрсенің арасындағы ұқсастық", qsDef: "Basqa bır närsege öte ūqsas nemese ekı närsenıñ arasyndağy ūqsastyq", enDef: "Something very similar to something else, or a similarity between two things"),
-        Word(kzWord: "Полигон", qsWord: "Polygon", enWord: "Polygon", kzDef: "Үш немесе одан да көп тік жақтары бар жазық пішін", qsDef: "Üş nemese odan da köp tık jaqtary bar jazyq pışın", enDef: "A flat shape with three or more straight sides"),
-        Word(kzWord: "Смартфон", qsWord: "Smart Phone", enWord: "Smart Phone", kzDef: "Кішкентай компьютер ретінде пайдаланылатын және Интернетке қосылатын ұялы телефон", qsDef: "Kışkentai kömpüter retınde paidalanylatyn jäne İnternetke qosylatyn ūialy telefon", enDef: "A mobile phone that can be used as a small computer and that connects to the internet"),
-        Word(kzWord: "Стресс", qsWord: "Stress", enWord: "Stress", kzDef: "Күрделі жағдайдан туындаған үлкен алаңдаушылық немесе осы күйді тудыратын нәрсе", qsDef: "Kürdelı jağdaidan tuyndağan ülken alañdauşylyq nemese osy küidı tudyratyn närse", enDef: "Great worry caused by a difficult situation, or something that causes this condition"),
+        Word(kzWord: "Алгоритм", qsWord: "Algoritm", enWord: "Algorithm", kzDef: "Математикалық нұсқаулар немесе ережелер жинағы, әсіресе компьютерге берілген жағдайда, тапсырманың жауабын есептеуге көмектеседі", qsDef: "Matematikalyq nūsqaular nemese erejeler jinağy, äsırese kömpüterge berılgen jağdaida, tapsyrmanyñ jauabyn esepteuge kömektesedı", enDef: "A set of mathematical instructions or rules that, especially if given to a computer, will help to calculate an answer to a problem"),
+        Word(kzWord: "Бустинг", qsWord: "Busting", enWord: "Boosting", kzDef: "Бір нәрсе жақсаратын немесе көбейетін жағдай", qsDef: "Bır närse jaqsaratyn nemese köbeietın jağdai", enDef: "An occasion when something is improved or increased"),
+        Word(kzWord: "Эмиттер", qsWord: "Emiter", enWord: "Emitter", kzDef: "Жарықты, шуды немесе затты, әсіресе көмірқышқыл газын сәулелендіретін (= жіберетін) нәрсе", qsDef: "Jaryqty, şudy nemese zatty, äsırese kömırqyşqyl gazyn säulelendıretın (= jıberetın) närse", enDef: "Something that emits (= sends out) light, a noise, or a substance, especially the gas carbon dioxide"),
+        Word(kzWord: "Гистограмма", qsWord: "Gistogramma", enWord: "Histogram", kzDef: "Салмақ, биіктік, уақыт және т.б. ауқымдарды немесе жиіліктерді көрсету үшін әртүрлі биіктіктегі тік бағандарды пайдаланатын математикалық кескін", qsDef: "Salmaq, biıktık, uaqyt jäne t.b. auqymdardy nemese jiılıkterdı körsetu üşın ärtürlı biıktıktegı tık bağandardy paidalanatyn matematikalyq keskın", enDef: "A mathematical picture that uses vertical columns of different heights to show ranges of weight, height, time, etc. or frequencies"),
+        Word(kzWord: "Параллель", qsWord: "Paralel", enWord: "Parallel", kzDef: "Басқа бір нәрсеге өте ұқсас немесе екі нәрсенің арасындағы ұқсастық", qsDef: "Basqa bır närsege öte ūqsas nemese ekı närsenıñ arasyndağy ūqsastyq", enDef: "Something very similar to something else, or a similarity between two things"),
+        Word(kzWord: "Полигон", qsWord: "Poligon", enWord: "Polygon", kzDef: "Үш немесе одан да көп тік жақтары бар жазық пішін", qsDef: "Üş nemese odan da köp tık jaqtary bar jazyq pışın", enDef: "A flat shape with three or more straight sides"),
+        Word(kzWord: "Смартфон", qsWord: "Smartfon", enWord: "Smart Phone", kzDef: "Кішкентай компьютер ретінде пайдаланылатын және Интернетке қосылатын ұялы телефон", qsDef: "Kışkentai kömpüter retınde paidalanylatyn jäne İnternetke qosylatyn ūialy telefon", enDef: "A mobile phone that can be used as a small computer and that connects to the internet"),
+        Word(kzWord: "Стресс", qsWord: "Stres", enWord: "Stress", kzDef: "Күрделі жағдайдан туындаған үлкен алаңдаушылық немесе осы күйді тудыратын нәрсе", qsDef: "Kürdelı jağdaidan tuyndağan ülken alañdauşylyq nemese osy küidı tudyratyn närse", enDef: "Great worry caused by a difficult situation, or something that causes this condition"),
         Word(kzWord: "Токен", qsWord: "Token", enWord: "Token", kzDef: "Жеке ақпаратты рұқсат етілмеген адамдарға қарауды болдырмау үшін басқа ақпаратты ұсыну және ауыстыру үшін пайдаланылатын деректер бөлігі.", qsDef: "Jeke aqparatty rūqsat etılmegen adamdarğa qaraudy boldyrmau üşın basqa aqparatty ūsynu jäne auystyru üşın paidalanylatyn derekter bölıgı.", enDef: "A piece of data that is used to represent and replace another one, in order to prevent private information being seen by someone who is not allowed to do so"),
-        Word(kzWord: "Регрессия", qsWord: "Regression", enWord: "Regression", kzDef: "Алдыңғы және төмен ілгерілетілген немесе нашар жағдайға, жағдайға немесе мінез-құлық тәсіліне қайтару", qsDef: "Aldyñğy jäne tömen ılgerıletılgen nemese naşar jağdaiğa, jağdaiğa nemese mınez-qūlyq täsılıne qaitaru", enDef: "A return to a previous and less advanced or worse state, condition, or way of behaving"),
+        Word(kzWord: "Регрессия", qsWord: "Regresia", enWord: "Regression", kzDef: "Алдыңғы және төмен ілгерілетілген немесе нашар жағдайға, жағдайға немесе мінез-құлық тәсіліне қайтару", qsDef: "Aldyñğy jäne tömen ılgerıletılgen nemese naşar jağdaiğa, jağdaiğa nemese mınez-qūlyq täsılıne qaitaru", enDef: "A return to a previous and less advanced or worse state, condition, or way of behaving"),
         Word(kzWord: "Талант", qsWord: "Talant", enWord: "Talant", kzDef: "(кімде бар) бір нәрседе, әсіресе оқытусыз жақсы болу қабілеті", qsDef: "(kımde bar) bır närsede, äsırese oqytusyz jaqsy bolu qabıletı", enDef: "(someone who has) a natural ability to be good at something, especially without being taught"),
+        Word(kzWord: "Альянс", qsWord: "Äläns", enWord: "Alliance", kzDef: "Одақтастардың немесе мүшелердің ынтымақтастығы", qsDef: "Odaqtastardyñ nemese müşelerdıñ yntymaqtastyğy", enDef: "Co-operation of allies or members"),
+        Word(kzWord: "Баннер", qsWord: "Baner", enWord: "Banner", kzDef: "Хабар беретін үлкен мата бәліші", qsDef: "Habar beretın ülken mata bälışı", enDef: "A large pie of cloth bearing a message"),
+        Word(kzWord: "Колаборация", qsWord: "Kolaborasia", enWord: "Collaboration", kzDef: "Басқалармен бірлесіп жұмыс істеу жөніндегі іс-әрекеттер", qsDef: "Basqalarmen bırlesıp jūmys ısteu jönındegı ıs-äreketter", enDef: "The action of working together with others"),
+        Word(kzWord: "Дефект", qsWord: "Defekt", enWord: "Defect", kzDef: "Машинаны пайдалануға кедергі келтіретін тиісті функцияның болмауы", qsDef: "Maşinany paidalanuğa kedergı keltıretın tiıstı funksianyñ bolmauy", enDef: "A lack of proper function which prevents use of a machine"),
+        Word(kzWord: "Элита", qsWord: "Elita", enWord: "Elite", kzDef: "Шектеулі топқа жатады", qsDef: "Şekteulı topqa jatady", enDef: "Relating to a limited group"),
+        Word(kzWord: "Лайбл", qsWord: "Laibl", enWord: "Label ", kzDef: "Оның құрамын сәйкестендіруге арналған затқа орналастырылған қағаз немесе пластик парағы", qsDef: "Onyñ qūramyn säikestendıruge arnalğan zatqa ornalastyrylğan qağaz nemese plastik parağy", enDef: "A piece of paper or plastic placed on an item for purposes of identifying its contents"),
+        Word(kzWord: "Тренд", qsWord: "Trend", enWord: "Trend", kzDef: "Ортақ пайдаланылатын ағымдағы теңшелім", qsDef: "Ortaq paidalanylatyn ağymdağy teñşelım", enDef: "The current preference displayed by the public"),
+        Word(kzWord: "Ультиматум", qsWord: "Ültimatum", enWord: "Ultimatum", kzDef: "Екі күрделі немесе жағымсыз нұсқаны ұсыну әрекеті", qsDef: "Ekı kürdelı nemese jağymsyz nūsqany ūsynu äreketı", enDef: "Ultimatum"),
+        Word(kzWord: "Апостроф", qsWord: "Apostrof", enWord: "Apostrophe", kzDef: "Бір немесе бірнеше әріп немесе цифр алынып тасталғанын көрсететін («) белгі", qsDef: "Bır nemese bırneşe ärıp nemese sifr alynyp tastalğanyn körsetetın («) belgı", enDef: "The mark ( ’ ) used to show that one or more letters or numbers have been left out"),
+        Word(kzWord: "Аналог", qsWord: "Analog", enWord: "Analog", kzDef: "деректерді өлшеу немесе сақтау үшін физикалық шамалардың тұрақты өзгеретін диапазонын (электрондық процесті)", qsDef: "derekterdı ölşeu nemese saqtau üşın fizikalyq şamalardyñ tūraqty özgeretın diapazonyn (elektrondyq prosestı)", enDef: "(of an electronic process) using a continuously changing range of physical quantities to measure or store data"),
+        Word(kzWord: "Каскад", qsWord: "Kaskad", enWord: "Cascad", kzDef: "бір мезгілде құлайтын немесе тез келетін заттардың көптігі", qsDef: "bır mezgılde qūlaityn nemese tez keletın zattardyñ köptıgı", enDef: "a large number of things falling or coming quickly at the same time"),
+        Word(kzWord: "Контур", qsWord: "Kontur", enWord: "Contour", kzDef: "бір нәрсенің сыртқы шеттері; оның пішінінің немесе пішінінің контуры", qsDef: "bır närsenıñ syrtqy şetterı; onyñ pışınınıñ nemese pışınınıñ kontury", enDef: "the outer edges of something; the outline of its shape or form"),
+        Word(kzWord: "Робот", qsWord: "Robot", enWord: "Robot", kzDef: "күрделі міндеттер сериясын өзі орындай алатын машина", qsDef: "kürdelı mındetter seriasyn özı oryndai alatyn maşina", enDef: "a machine that can perform a complicated series of tasks by itself"),
+        Word(kzWord: "Лазер", qsWord: "Lazer", enWord: "Laser", kzDef: "медициналық операцияларды орындау үшін немесе ойын-сауық үшін жарық үлгілерін жасау үшін металл кесуге арналған құрал ретінде пайдалануға болатын қуатты тар жарық сәулесі (өндіретін құрылғы)", qsDef: "medisinalyq operasialardy oryndau üşın nemese oiyn-sauyq üşın jaryq ülgılerın jasau üşın metal kesuge arnalğan qūral retınde paidalanuğa bolatyn quatty tar jaryq säulesı (öndıretın qūrylğy)", enDef: "(a device that produces) a powerful, narrow beam of light that can be used as a tool to cut metal, to perform medical operations, or to create patterns of light for entertainment"),
+        Word(kzWord: "Медиана", qsWord: "Mediana", enWord: "Median", kzDef: "Медиандық мән өлшем ретімен орналасқан мәндер жиынындағы орташа мән болып табылады", qsDef: "Mediandyq män ölşem retımen ornalasqan mänder jiynyndağy ortaşa män bolyp tabylady", enDef: "The median value is the middle one in a set of values arranged in order of size"),
+        Word(kzWord: "Мотор", qsWord: "Motor", enWord: "Motor", kzDef: "электр немесе отынды қозғалысқа ауыстыратын және машинаны жұмыс істеуге мәжбүрлейтін құрылғы", qsDef: "elektr nemese otyndy qozğalysqa auystyratyn jäne maşinany jūmys ısteuge mäjbürleitın qūrylğy", enDef: "a device that changes electricity or fuel into movement and makes a machine work"),
+        Word(kzWord: "Нейрон", qsWord: "Neiron", enWord: "Neuron", kzDef: "ми мен дененің басқа бөліктері арасында ақпарат алып жүретін жүйке жасушасы", qsDef: "mi men denenıñ basqa bölıkterı arasynda aqparat alyp jüretın jüike jasuşasy", enDef: "a nerve cell that carries information between the brain and other parts of the body"),
+        Word(kzWord: "Пластик", qsWord: "Plastik", enWord: "Plastic", kzDef: "әр түрлі нысандарда жұмсақ болғанда қалыптасуы мүмкін және әр түрлі қолданысы көп жасанды зат", qsDef: "är türlı nysandarda jūmsaq bolğanda qalyptasuy mümkın jäne är türlı qoldanysy köp jasandy zat", enDef: "an artificial substance that can be shaped when soft into many different forms and has many different uses"),
+        Word(kzWord: "Логика", qsWord: "Logika", enWord: "Logic", kzDef: "ерекше ойлау бейнесі, әсіресе ақылға қонымды және ақыл-ойға негізделген", qsDef: "erekşe oilau beinesı, äsırese aqylğa qonymdy jäne aqyl-oiğa negızdelgen", enDef: "a particular way of thinking, especially one that is reasonable and based on good judgment"),
+        Word(kzWord: "Сервер", qsWord: "Server", enWord: "Server", kzDef: "басқа компьютерлер ақпарат алатын орталық компьютер", qsDef: "basqa kömpüterler aqparat alatyn ortalyq kömpüter", enDef: "a central computer from which other computers get information"),
+        Word(kzWord: "Кликбейт", qsWord: "Klikbeit", enWord: "Clickbait", kzDef: "назар аудару және келушілерді белгілі бір веб-параққа сілтеме бойынша өтуге ынталандыру үшін Интернетте орналастырылған материал", qsDef: "nazar audaru jäne keluşılerdı belgılı bır veb-paraqqa sılteme boiynşa ötuge yntalandyru üşın İnternette ornalastyrylğan material", enDef: "material put on the internet in order to attract attention and encourage visitors to click on a link to a particular web page"),
+        Word(kzWord: "Диод", qsWord: "Diod", enWord: "Diode", kzDef: "электр тогы бір бағытта ғана өтетін электрондық құрылғы", qsDef: "elektr togy bır bağytta ğana ötetın elektrondyq qūrylğy", enDef: "an electronic device in which the electric current passes in one direction only"),
+        Word(kzWord: "Геометрия", qsWord: "Geometria", enWord: "Geometry", kzDef: "нақты объектідегі немесе нысандағы сызықтардың, бұрыштардың және т.б. өлшемдері мен өзара байланысы", qsDef: "naqty obektıdegı nemese nysandağy syzyqtardyñ, būryştardyñ jäne t.b. ölşemderı men özara bailanysy", enDef: "the measurements and relationships of lines, angles, etc. in a particular object or shape"),
+        Word(kzWord: "Градиент", qsWord: "Gradient", enWord: "Gradient", kzDef: "көлбеу қаншалықты тік, жиі пайызбен көрсетіледі", qsDef: "kölbeu qanşalyqty tık, jiı paiyzben körsetıledı", enDef: "a measure of how steep a slope is, often expressed as a percentage")
+//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
     ]
     
     var untranslatableKZ: [Word] = [
@@ -65,6 +95,17 @@ struct Page2_2Generator: View {
         Word(kzWord: "Монтию / томпию", qsWord: "Montiu / tompiu", enWord: "", kzDef: "Сабырлы, мойынсұнғыш және мазмұнды болып көрінеді, көбінесе балаларға қатысты қолданылады", qsDef: "Sabyrly, moiynsūnğyş jäne mazmūndy bolyp körınedı, köbınese balalarğa qatysty qoldanylady", enDef: "Appear calm, obedient and content, most often used in relation to children"),
         Word(kzWord: "Өгейсіну", qsWord: "Ögeisınu", enWord: "", kzDef: "Бейтаныс адам сияқты қарым-қатынас жасаңыз", qsDef: "Beitanys adam siaqty qarym-qatynas jasañyz", enDef: "Treat like a strange"),
         Word(kzWord: "Сәске", qsWord: "Säske", enWord: "", kzDef: "Күн көкжиектен ақыры көтерілген кез", qsDef: "Kün kökjiekten aqyry köterılgen kez", enDef: "The time when the sun finally rose above the horizon"),
+        Word(kzWord: "Сәске", qsWord: "Säske", enWord: "", kzDef: "Күн көкжиектен ақыры көтерілген кез", qsDef: "Kün kökjiekten aqyry köterılgen kez", enDef: "The time when the sun finally rose above the horizon"),
+        Word(kzWord: "Көташар", qsWord: "Kötaşar", enWord: "", kzDef: "Балалар қонақтарға барлық үй сырларын айтып отырған сәт", qsDef: "Balalar qonaqtarğa barlyq üi syrlaryn aityp otyrğan sät", enDef: "The moment children tell to guests all household secrets"),
+        Word(kzWord: "Өздесу", qsWord: "Özdesu", enWord: "", kzDef: "Өзіңмен кездесу, мысалы, киноға немесе мейрамханаға жалғыз бару", qsDef: "Özıñmen kezdesu, mysaly, kinoğa nemese meiramhanağa jalğyz baru", enDef: "Meeting yourself, for example, going alone to the cinema or to a restaurant"),
+        Word(kzWord: "Шәйлендірілмеген ", qsWord: "Şäilendırılmegen", enWord: "", kzDef: "Таңертеңнен шай ішіп үлгермеген адам енді ұйқылы жүреді", qsDef: "Tañerteñnen şai ışıp ülgermegen adam endı ūiqyly jüredı", enDef: "A man who did not have time to drink tea in the morning, and now walks sleepy"),
+        Word(kzWord: "Досхаббат", qsWord: "Doshabbat", enWord: "", kzDef: "Ерлердің берік достығы", qsDef: "Erlerdıñ berık dostyğy", enDef: "Strong male friendship"),
+        Word(kzWord: "Уикимақ", qsWord: "Uikimaq", enWord: "", kzDef: "Уикипедияда жазылғандардың барлығын шындыққа қабылдайтын адам", qsDef: "Uikipediada jazylğandardyñ barlyğyn şyndyqqa qabyldaityn adam", enDef: "The Man Who Takes Everything Wikipedia Says for the Truth"),
+        Word(kzWord: "Қимастық", qsWord: "Qimastyq", enWord: "", kzDef: "Жақыныңды жоғалтқың келмейтін сезім", qsDef: "Jaqynyñdy joğaltqyñ kelmeitın sezım", enDef: "Feeling when you don't want to lose a loved one"),
+        Word(kzWord: "Ынтықтыру", qsWord: "Yntyqtyru", enWord: "", kzDef: "Бір нәрсеге құштарлық, құштарлық туғызу", qsDef: "Bır närsege qūştarlyq, qūştarlyq tuğyzu", enDef: "Provoke a passionate desire, a desire for something"),
+        Word(kzWord: "Жатырқау", qsWord: "Jatyrqau", enWord: "", kzDef: "Кішкентай бала басқаларды қабылдамағанда, олардан бас тартады, туыстарынан басқа итереді", qsDef: "Kışkentai bala basqalardy qabyldamağanda, olardan bas tartady, tuystarynan basqa iteredı", enDef: "When a baby rejects all others, turns away from them, pushes except relatives"),
+        Word(kzWord: "Зағыру", qsWord: "Zağyru", enWord: "", kzDef: "Ұзақ уақыт көрмеу немесе көрмеу", qsDef: "Ūzaq uaqyt körmeu nemese körmeu", enDef: "Do not see each other for a long time or never see"),
+        Word(kzWord: "Құсалау", qsWord: "Qūsalau", enWord: "", kzDef: "Сағынудан ауруға шалдығу мүмкін емес", qsDef: "Sağynudan auruğa şaldyğu mümkın emes", enDef: "Critically sick because of melancholy")
     ]
     
     var untranslatableEN: [Word] = [
@@ -93,7 +134,31 @@ struct Page2_2Generator: View {
         Word(kzWord: "", qsWord: "", enWord: "Toddler", kzDef: "Жақында ғана жүруді үйренген бала, 1-3 жас", qsDef: "Jaqynda ğana jürudı üirengen bala, 1-3 jas", enDef: "A child who has only recently learnt to walk, 1-3 years"),
         Word(kzWord: "", qsWord: "", enWord: "Commute", kzDef: "Жұмыс орныңыз бен үйіңіздің арасында үнемі автобуспен, пойызбен, автокөлікпен және т.б", qsDef: "Jūmys ornyñyz ben üiıñızdıñ arasynda ünemı avtobuspen, poiyzben, avtokölıkpen jäne t.b", enDef: "To travel regularly by bus, train, car, etc. between your place of work and your home"),
         Word(kzWord: "", qsWord: "", enWord: "Staycation", kzDef: "Үйіңізде немесе оның жанында өткізетін демалыс", qsDef: "Üiıñızde nemese onyñ janynda ötkızetın demalys", enDef: "A holiday that you spend at or near your home"),
-        
+        Word(kzWord: "", qsWord: "", enWord: "Insigth", kzDef: "Түсіністік, ұғынушылық, сезім", qsDef: "Tüsınıstık, ūğynuşylyq, sezım", enDef: "An understanding of what something is like"),
+        Word(kzWord: "", qsWord: "", enWord: "Gobbledygook", kzDef: "Сөйлеу қабілеті; ұзақ және түсініксіз сөздерді қолдану/Бюрократиялық немесе арнайы тіл", qsDef: "Söileu qabıletı; ūzaq jäne tüsınıksız sözderdı qoldanu/Bürokratialyq nemese arnaiy tıl", enDef: "Complicated language that is difficult to understand, especially when used in official documents"),
+        Word(kzWord: "", qsWord: "", enWord: "Jinx", kzDef: "Сәтсіздікке әкелетін адам немесе зат", qsDef: "Sätsızdıkke äkeletın adam nemese zat", enDef: "To bring bad luck in a mysterious way"),
+        Word(kzWord: "", qsWord: "", enWord: "Shallow", kzDef: "Жоғарғы бөліктің немесе үстіңгі бөліктің және төменгі бөліктің арасында үлкен қашықтықтың болмауы", qsDef: "Joğarğy bölıktıñ nemese üstıñgı bölıktıñ jäne tömengı bölıktıñ arasynda ülken qaşyqtyqtyñ bolmauy", enDef: "Not having much distance between the top or surface and the bottom"),
+        Word(kzWord: "", qsWord: "", enWord: "Bamboozle", kzDef: "Біреуді шатастыру, әсіресе алдау арқылы", qsDef: "Bıreudı şatastyru, äsırese aldau arqyly", enDef: "To confuse somebody, especially by tricking them"),
+        Word(kzWord: "", qsWord: "", enWord: "Wanderlust", kzDef: "Саяхаттауға деген құштарлық", qsDef: "Saiahattauğa degen qūştarlyq", enDef: "A strong desire to travel"),
+        Word(kzWord: "", qsWord: "", enWord: "Mellifluous", kzDef: "Тәтті және тегіс естіледі; тыңдау өте жақсы", qsDef: "Tättı jäne tegıs estıledı; tyñdau öte jaqsy", enDef: "Sounding sweet and smooth; very pleasant to listen to"),
+        Word(kzWord: "", qsWord: "", enWord: "Defenestration", kzDef: "Терезеден біреуді лақтыру немесе итеріп шығару әрекеті", qsDef: "Terezeden bıreudı laqtyru nemese iterıp şyğaru äreketı", enDef: "The action of throwing or pushing someone out of a window"),
+        Word(kzWord: "", qsWord: "", enWord: "Petrichor", kzDef: "Құрғақ жерге жаңбыр түскенде пайда болатын иіс әдетте жағымды деп қабылданады", qsDef: "Qūrğaq jerge jañbyr tüskende paida bolatyn iıs ädette jağymdy dep qabyldanady", enDef: "The smell produced when rain falls on dry ground, usually experienced as being pleasant"),
+        Word(kzWord: "", qsWord: "", enWord: "Bungalow", kzDef: "Әдетте тек бір қабатты үй", qsDef: "Ädette tek bır qabatty üi", enDef: "A house that usually has only one storey"),
+        Word(kzWord: "", qsWord: "", enWord: "Whimsical", kzDef: "Күлкілі немесе тітіркендіретін әдеттен тыс және сәл әдіс", qsDef: "Külkılı nemese tıtırkendıretın ädetten tys jäne säl ädıs", enDef: "Unusual and strange in a way that might be funny or annoying"),
+        Word(kzWord: "", qsWord: "", enWord: "Nonchalan", kzDef: "Өздеріңізді жиі қызығушылық танытпайтындай немесе қамқорлық танытпайтындай сабырлы ұстаңыз", qsDef: "Özderıñızdı jiı qyzyğuşylyq tanytpaityndai nemese qamqorlyq tanytpaityndai sabyrly ūstañyz", enDef: "Behaving in a calm manner, often in a way that suggests you are not interested or do not care"),
+        Word(kzWord: "", qsWord: "", enWord: "Zeitgeist", kzDef: "Тарихтың нақты кезеңіне тән идеялар, сенімдер, сезімдердің жалпы жинағы", qsDef: "Tarihtyñ naqty kezeñıne tän ideialar, senımder, sezımderdıñ jalpy jinağy", enDef: "The general set of ideas, beliefs, feelings that is typical of a particular period in history"),
+        Word(kzWord: "", qsWord: "", enWord: "Quintessential", kzDef: "Бір нәрсенің ең типтік мысалы немесе ең маңызды бөлігі болу", qsDef: "Bır närsenıñ eñ tiptık mysaly nemese eñ mañyzdy bölıgı bolu", enDef: "Being the most typical example or most important part of something"),
+        Word(kzWord: "", qsWord: "", enWord: "Ineffable", kzDef: "Kөңіл-күй тудырады, әсіресе көңіл-күйді сипаттауға келмейді", qsDef: "Köñıl-küi tudyrady, äsırese köñıl-küidı sipattauğa kelmeidı", enDef: "Causing so much emotion, especially pleasure, that it cannot be described"),
+        Word(kzWord: "", qsWord: "", enWord: "Kerfuffle", kzDef: "Шу, толқу және дау", qsDef: "Şu, tolqu jäne dau", enDef: "Noise, excitement, and argument"),
+        Word(kzWord: "", qsWord: "", enWord: "Flummoxed", kzDef: "Сіз не істейтініңізді білмейсіз", qsDef: "Sız ne ısteitınıñızdı bılmeisız", enDef: "So confused that you do not know what to do"),
+        Word(kzWord: "", qsWord: "", enWord: "Mellowness", kzDef: "Жай-күйі немесе сапасы жұмсақ, босаңсыған немесе эмоциялық тұрғыдан тыныш болу", qsDef: "Jai-küiı nemese sapasy jūmsaq, bosañsyğan nemese emosialyq tūrğydan tynyş bolu", enDef: "A state or quality of being gentle, relaxed, or emotionally calm"),
+        Word(kzWord: "", qsWord: "", enWord: "Ephemeral", kzDef: "Tек қысқа уақытқа ғана", qsDef: "Tek qysqa uaqytqa ğana", enDef: "Lasting for only a short time"),
+        Word(kzWord: "", qsWord: "", enWord: "Zest", kzDef: "Энтузиазм, жігер, энергия және қызығушылық", qsDef: "Entuziazm, jıger, energia jäne qyzyğuşylyq", enDef: "Enthusiasm, eagerness, energy, and interest"),
+        Word(kzWord: "", qsWord: "", enWord: "Snafu", kzDef: "Жоспарланғандай ештеңе болмаған жағдай", qsDef: "Josparlanğandai eşteñe bolmağan jağdai", enDef: "A situation in which nothing has happened as planned"),
+        Word(kzWord: "", qsWord: "", enWord: "Peckish", kzDef: "Aздап ашаршылық", qsDef: "Azdap aşarşylyq", enDef: "Slightly hungry"),
+        Word(kzWord: "", qsWord: "", enWord: "Spork", kzDef: "Қасық пішінді, бірақ шанышқы сияқты үшкір бөліктері бар құрал", qsDef: "Qasyq pışındı, bıraq şanyşqy siaqty üşkır bölıkterı bar qūral", enDef: "A tool that has a shape like a spoon but with pointed parts like a fork"),
+        Word(kzWord: "", qsWord: "", enWord: "Pizzazz", kzDef: "Tірі және қызықты сапа немесе стиль", qsDef: "Tırı jäne qyzyqty sapa nemese stil", enDef: "А lively and exciting quality or style"),
+        Word(kzWord: "", qsWord: "", enWord: "Palindrome", kzDef: "Сол жақтан солға қарай да солға қарай да бірдей оқылатын сөз немесе сөйлем", qsDef: "Sol jaqtan solğa qarai da solğa qarai da bırdei oqylatyn söz nemese söilem", enDef: "A word or phrase that reads the same backwards as forwards")
     ]
     
     var idioms: [Word] = [
@@ -117,16 +182,16 @@ struct Page2_2Generator: View {
         Word(kzWord: "Жіпсіз байлану", qsWord: "Jıpsız bailanu", enWord: "Lose out on (something)", kzDef: "Кез келген нәрсені істеу қабілетін жоғалтыңыз", qsDef: "Kez kelgen närsenı ısteu qabıletın joğaltyñyz", enDef: "To not get something you wanted or feel you should have"),
         Word(kzWord: "Маңдай терін төгу", qsWord: "Mañdai terın tögu", enWord: "By the sweat of one's brow", kzDef: "Бар күшіңізбен жұмыс жасаңыз", qsDef: "Bar küşıñızben jūmys jasañyz", enDef: "To work hard"),
         Word(kzWord: "Пәрмене (пәруана) болу", qsWord: "Pärmene (päruana) bolu", enWord: "Lay down one's life (for someone or something)", kzDef: "Өзге үшін өзіңді аяма", qsDef: "Özge üşın özıñdı aiama", enDef: "Give your life for someone/something"),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Ақ май аузынан ағу", qsWord: "Aq mai auzynan ağu", enWord: "Well-heeled", kzDef: "Мол болу, молшылықта өмір сүру", qsDef: "Mol bolu, molşylyqta ömır süru", enDef: "Rich"),
+        Word(kzWord: "Ат сауырын беру", qsWord: "At sauyryn beru", enWord: "Give (someone) a hand", kzDef: "Қиын уақытта көмектесу", qsDef: "Qiyn uaqytta kömektesu", enDef: "To give someone help"),
+        Word(kzWord: "Аузы аузына жұқпау", qsWord: "Auzy auzyna jūqpau", enWord: "Talk (someone's) head off", kzDef: "Тоқтамай тез сөйлеңіз", qsDef: "Toqtamai tez söileñız", enDef: "To talk to someone for a long time, usually loudly"),
+        Word(kzWord: "Ешкінің құйрығы көкке жеткенде, түйенің құйрығы жерге жеткенде", qsWord: "Eşkınıñ qūiryğy kökke jetkende, tüienıñ qūiryğy jerge jetkende", enWord: "Once in a blue moon", kzDef: "Шексіз алыс уақытқа дейін", qsDef: "Şeksız alys uaqytqa deiın", enDef: "Something that happens very rarely"),
+        Word(kzWord: "Қараңды батыр!", qsWord: "Qarañdy batyr!", enWord: "Hit the road", kzDef: "Кет бұл жерден", qsDef: "Ket būl jerden", enDef: "Go away "),
+        Word(kzWord: "Мақтан тұту", qsWord: "Maqtan tūtu", enWord: "Burst with pride", kzDef: "Мақтаныш сезімін сезініңіз", qsDef: "Maqtanyş sezımın sezınıñız", enDef: "To feel a strong emotion (pride)"),
+        Word(kzWord: "Шопақ құрлы көрмеу", qsWord: "Şopaq qūrly körmeu", enWord: "Fall on deaf ears", kzDef: "Ешкімге назар аудармаңыз", qsDef: "Eşkımge nazar audarmañyz", enDef: "To be ignored or not noticed by other people"),
+        Word(kzWord: "Ғайып болу", qsWord: "Ğaiyp bolu", enWord: "Vanish into thin air", kzDef: "Кенеттен жоғалып кету", qsDef: "Kenetten joğalyp ketu", enDef: "To disappear suddenly and completely"),
+        Word(kzWord: "Көз айырмау", qsWord: "Köz aiyrmau", enWord: "Look over (something)", kzDef: "Мұқият қараңыз", qsDef: "Mūqiat qarañyz", enDef: "To examine something to see how good, big, etc. it is"),
+        Word(kzWord: "Көз ілескенше", qsWord: "Köz ıleskenşe", enWord: "At once", kzDef: "Дереу; кідіріссіз", qsDef: "Dereu; kıdırıssız", enDef: "Immediately; without delay")
     ]
     
     var modern: [Word] = [
@@ -140,6 +205,46 @@ struct Page2_2Generator: View {
         Word(kzWord: "Шаптырма", qsWord: "Şaptyrma", enWord: "Shower", kzDef: "", qsDef: "", enDef: ""),
         Word(kzWord: "Уәждеме", qsWord: "Uäjdeme", enWord: "Motivation", kzDef: "", qsDef: "", enDef: ""),
         Word(kzWord: "Тінтуір", qsWord: "Tıntuır", enWord: "Computer mouse", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Несие", qsWord: "Nesie", enWord: "Credit", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Күйсандық", qsWord: "Küisandyq", enWord: "Piano", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Баялды", qsWord: "Baialdy", enWord: "Eggplant", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жарықтылық", qsWord: "Jaryqtylyq", enWord: "Brightness", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Кәбіл", qsWord: "Käbıl", enWord: "Cable", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Үстірттік", qsWord: "Üstırttık", enWord: "Bias", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жүйе", qsWord: "Jüie", enWord: "System", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Дәлдік", qsWord: "Däldık", enWord: "Precision", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Бағдарламалау", qsWord: "Bağdarlamalau", enWord: "Programming", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сапа", qsWord: "Sapa", enWord: "Quality", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Көз", qsWord: "Köz", enWord: "Source", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Асқарпаз", qsWord: "Asqarpaz", enWord: "Climber", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Шынжыр", qsWord: "Şynjyr", enWord: "Chain", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Үздіксіз", qsWord: "Üzdıksız", enWord: "Continuous", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Болжау", qsWord: "Boljau", enWord: "Forecasting", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Ақиқат", qsWord: "Aqiqat", enWord: "Ground Truth", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Индекстеу", qsWord: "İndeksteu", enWord: "Indexing", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Инфрақызыл", qsWord: "İnfraqyzyl", enWord: "Infrared", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Негіздеме", qsWord: "Negızdeme", enWord: "Justification", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жүктеу", qsWord: "Jükteu", enWord: "Load", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сомын", qsWord: "Somyn", enWord: "Nut", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Оңтайландыру", qsWord: "Oñtailandyru", enWord: "Optimization", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сауал", qsWord: "Saual", enWord: "Query", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Арақатынас", qsWord: "Araqatynas", enWord: "Ratio", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сенімділік", qsWord: "Senımdılık", enWord: "Reliability", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сыйақы", qsWord: "Syiaqy", enWord: "Reward", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Виртуалды Шындық", qsWord: "Virtualdy Şyndyq", enWord: "Virtual Reality", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Белгісіздік", qsWord: "Belgısızdık", enWord: "Uncertainty", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Баптау", qsWord: "Baptau", enWord: "Tuning", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Түйрегіш", qsWord: "Tüiregış", enWord: "Stud", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сауалнама", qsWord: "Saualnama", enWord: "Questionnaire", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Әдіс", qsWord: "Ädıs", enWord: "Method", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Дағдарыс", qsWord: "Dağdarys", enWord: "Crisis", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сарықисық", qsWord: "Saryqisyq", enWord: "Banan", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жасуша", qsWord: "Jasuşa", enWord: "Cell", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Ағза", qsWord: "Ağza", enWord: "Body", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сілтеме", qsWord: "Sılteme", enWord: "Reference", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Делдал", qsWord: "Deldal", enWord: "Intermediary", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жағдарыс", qsWord: "Jağdarys", enWord: "Situation", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Түпнұсқа", qsWord: "Tüpnūsqa", enWord: "Original", kzDef: "", qsDef: "", enDef: "")
     ]
     
     @Environment (\.presentationMode) private var presentationMode: Binding<PresentationMode>
@@ -169,7 +274,7 @@ struct Page2_2Generator: View {
     @State private var isPopoverVisible = false
     @State private var isSheetVisible = false
     
-    let openAIService = OpenAIService()
+    let openAIService = OpenAIService1()
     @State var cancellables = Set<AnyCancellable>()
     
     var body: some View {
@@ -374,35 +479,40 @@ struct Page2_2Generator: View {
 
                 Button(action: {
                     isPopoverVisible = true
-                    
+
                     if(languageDB[0].language == "English"){
-                        let myMessage = ChatMessage(id: UUID().uuidString, content: "Word(s): \(textCard). Person has done this task: \(task) Person's answer: \(answer) . Please write if there are any grammatical and lexical mistakes or suggestions for improving the answer.", sender: .me)
-                        print(myMessage.content)
-                        openAIService.sendMessage(message: myMessage.content).sink { completion in
-                            // error
-                        } receiveValue: { response in
-                            guard let textResponse = response.choices.first?.text else {return}
-                            let gptMessage = ChatMessage(id: response.id, content: textResponse, sender: .gpt)
-                            textAns = gptMessage.content
+                        
+                        let userPrompt = "Word(s): '\(textCard)'. Person has done this task: '\(task)' Person's answer: '\(answer)' . Please write if there are any grammatical and lexical mistakes or suggestions for improving the answer."
+
+                        OpenAIService1.generateResponse(for: userPrompt) { result in
+                            switch result {
+                            case .success(let response):
+                                print("Generated response: \(response)")
+                                textAns = response
+                            case .failure(let error):
+                                print("Error: \(error)")
+                            }
                         }
-                        .store(in: &cancellables)
+                        
                     }
                     else{
-                        let myMessage = ChatMessage(id: UUID().uuidString, content: "Сөз(дер): \(textCard). Адам бұл тапсырманы орындады: \(task) Адамның жауабы: \(answer). Жауабын жақсарту үшін қандай да бір грамматикалық және лексикалық қателер немесе сөйлемдер болса, жазыңыз.", sender: .me)
-                        print(myMessage.content)
-                        openAIService.sendMessage(message: myMessage.content).sink { completion in
-                            // error
-                        } receiveValue: { response in
-                            guard let textResponse = response.choices.first?.text else {return}
-                            let gptMessage = ChatMessage(id: response.id, content: textResponse, sender: .gpt)
-                            textAns = gptMessage.content
+                        
+                        let userPrompt = "Сөз(дер): \(textCard). Адам бұл тапсырманы орындады: \(task) Адамның жауабы: \(answer). Жауабын жақсарту үшін қандай да бір грамматикалық және лексикалық қателер немесе сөйлемдер болса, жазыңыз."
+
+                        OpenAIService1.generateResponse(for: userPrompt) { result in
+                            switch result {
+                            case .success(let response):
+                                print("Generated response: \(response)")
+                                textAns = response
+                            case .failure(let error):
+                                print("Error: \(error)")
+                            }
                         }
-                        .store(in: &cancellables)
                     }
 
-                    
-                    
-                    
+
+
+
                 }, label: {
                     if(languageDB[0].language == "English"){
                         CheckButton(check: "Check")

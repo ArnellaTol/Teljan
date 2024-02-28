@@ -20,8 +20,9 @@ struct Page3Translator: View {
     
     @State var input: String = ""
     @State var output: String = ""
+    @State var output2: String = ""
     
-    let openAIService = OpenAIService()
+    let openAIService = OpenAIService1()
     
     @State var cancellables = Set<AnyCancellable>()
     
@@ -151,54 +152,100 @@ struct Page3Translator: View {
                         
                         // qaz to kaz
                         if(indexLang1==0 && indexLang2==1){
-                            let myMessage = ChatMessage(id: UUID().uuidString, content: "А - A, Ә - Ä, Б - B, В - V, Г - G, Ғ - Ğ, Д - D, Е - E, Ё - Ö, Ж - J, З - Z, И - İ, Й - İ, К - K, Қ - Q, Л - L, М - M, Н - N, Ң - Ñ, О - O, Ө - Ö, П - P, Р - R, С - S, Т - T, У - U, Ұ - Ū, Ү - Ü, Ф - F, Х - H, Һ - H, Ц - S, Ч - Ch, Ш - Ş, Щ - Ş, Ъ - , Ы - Y, І - I, Ь - , Э - E, Ю - İu, Я - İa, а - a, ә - ä, б - b, в - v, г - g, ғ - ğ, д - d, е - e, ё - ö, ж - j, з - z, и - i, й - i, к - k, қ - q, л - l, м - m, н - n, ң - ñ, о - o, ө - ö, п - p, р - r, с - s, т - t, у - u, ұ - ū, ү - ü, ф - f, х - h, һ - h, ц - s, ч - ch, ш - ş, щ - ş, ъ - , ы - y, і - i, ь - , э - e, ю - iu, я - ia. Осы әріптер тізімін пайдалана отырып, мәтінді қазақ тілінің латын тілінен қазақ тілінің кириллицасына аударыңыз: \(input)", sender: .me)
-                            openAIService.sendMessage(message: myMessage.content).sink { completion in
-                                // error
-                            } receiveValue: { response in
-                                guard let textResponse = response.choices.first?.text else {return}
-                                let gptMessage = ChatMessage(id: response.id, content: textResponse, sender: .gpt)
-                                output = gptMessage.content
+                            let userPrompt = "А - A, Ә - Ä, Б - B, В - V, Г - G, Ғ - Ğ, Д - D, Е - E, Ё - Ö, Ж - J, З - Z, И - İ, Й - İ, К - K, Қ - Q, Л - L, М - M, Н - N, Ң - Ñ, О - O, Ө - Ö, П - P, Р - R, С - S, Т - T, У - U, Ұ - Ū, Ү - Ü, Ф - F, Х - H, Һ - H, Ц - S, Ч - Ch, Ш - Ş, Щ - Ş, Ъ - , Ы - Y, І - I, Ь - , Э - E, Ю - İu, Я - İa, а - a, ә - ä, б - b, в - v, г - g, ғ - ğ, д - d, е - e, ё - ö, ж - j, з - z, и - i, й - i, к - k, қ - q, л - l, м - m, н - n, ң - ñ, о - o, ө - ö, п - p, р - r, с - s, т - t, у - u, ұ - ū, ү - ü, ф - f, х - h, һ - h, ц - s, ч - ch, ш - ş, щ - ş, ъ - , ы - y, і - i, ь - , э - e, ю - iu, я - ia. Осы әріптер тізімін пайдалана отырып, мәтінді қазақ тілінің латын тілінен қазақ тілінің кириллицасына аударыңыз: \(input)"
+                            
+                            OpenAIService1.generateResponse(for: userPrompt) { result in
+                                switch result {
+                                case .success(let response):
+                                    print("Generated response: \(response)")
+                                    output = response
+                                case .failure(let error):
+                                    print("Error: \(error)")
+                                }
                             }
-                            .store(in: &cancellables)
-                        }
-                        
-                        // kaz to eng
-                        if(indexLang1==1 && indexLang2==2){
-                            let myMessage = ChatMessage(id: UUID().uuidString, content: "Мәтінді қазақ тілінен ағылшын тіліне аудар: \(input)", sender: .me)
-                            openAIService.sendMessage(message: myMessage.content).sink { completion in
-                                // error
-                            } receiveValue: { response in
-                                guard let textResponse = response.choices.first?.text else {return}
-                                let gptMessage = ChatMessage(id: response.id, content: textResponse, sender: .gpt)
-                                output = gptMessage.content
-                            }
-                            .store(in: &cancellables)
-
-                        }
-                        
-                        // eng to kaz Мәтінді ағылшын тілінен қазақ тіліне аудар
-                        if(indexLang1==2 && indexLang2==1){
-                            let myMessage = ChatMessage(id: UUID().uuidString, content: "Түпнұсқа мәтінді толтырмай, мәтіннің ағылшын тілінен қазақ тіліне толық аудармасын ғана беріңіз: \(input)", sender: .me)
-                            openAIService.sendMessage(message: myMessage.content).sink { completion in
-                                // error
-                            } receiveValue: { response in
-                                guard let textResponse = response.choices.first?.text else {return}
-                                let gptMessage = ChatMessage(id: response.id, content: textResponse, sender: .gpt)
-                                output = gptMessage.content
-                            }
-                            .store(in: &cancellables)
-                        }
-                        
-                        // qaz to eng
-                        if(indexLang1==0 && indexLang2==2){
                             
                         }
-                        
+
+                        // kaz to eng
+                        if(indexLang1==1 && indexLang2==2){
+                            let userPrompt = "Мәтінді қазақ тілінен ағылшын тіліне аудар: '\(input)'"
+
+                            OpenAIService1.generateResponse(for: userPrompt) { result in
+                                switch result {
+                                case .success(let response):
+                                    print("Generated response: \(response)")
+                                    output = response
+                                case .failure(let error):
+                                    print("Error: \(error)")
+                                }
+                            }
+                            
+                        }
+
+                        // eng to kaz
+                        if(indexLang1==2 && indexLang2==1){
+                            
+                            let userPrompt = "мәтіннің ағылшын тілінен қазақ тіліне толық аудармасын ғана беріңіз: '\(input)'"
+
+                            OpenAIService1.generateResponse(for: userPrompt) { result in
+                                switch result {
+                                case .success(let response):
+                                    print("Generated response: \(response)")
+                                    output = response
+                                case .failure(let error):
+                                    print("Error: \(error)")
+                                }
+                            }
+
+                        }
+
+                        // qaz to eng
+                        if(indexLang1==0 && indexLang2==2){
+                            let userPrompt = "А - A, Ә - Ä, Б - B, В - V, Г - G, Ғ - Ğ, Д - D, Е - E, Ё - Ö, Ж - J, З - Z, И - İ, Й - İ, К - K, Қ - Q, Л - L, М - M, Н - N, Ң - Ñ, О - O, Ө - Ö, П - P, Р - R, С - S, Т - T, У - U, Ұ - Ū, Ү - Ü, Ф - F, Х - H, Һ - H, Ц - S, Ч - Ch, Ш - Ş, Щ - Ş, Ъ - , Ы - Y, І - I, Ь - , Э - E, Ю - İu, Я - İa, а - a, ә - ä, б - b, в - v, г - g, ғ - ğ, д - d, е - e, ё - ö, ж - j, з - z, и - i, й - i, к - k, қ - q, л - l, м - m, н - n, ң - ñ, о - o, ө - ö, п - p, р - r, с - s, т - t, у - u, ұ - ū, ү - ü, ф - f, х - h, һ - h, ц - s, ч - ch, ш - ş, щ - ş, ъ - , ы - y, і - i, ь - , э - e, ю - iu, я - ia. Осы әріптер тізімін пайдалана отырып, мәтінді қазақ тілінің латын тілінен қазақ тілінің кириллицасына аударыңыз: '\(input)'"
+                            
+                            OpenAIService1.generateResponse(for: userPrompt) { result in
+                                switch result {
+                                case .success(let response):
+                                    print("Generated response: \(response)")
+                                    output2 = response
+                                case .failure(let error):
+                                    print("Error: \(error)")
+                                }
+                            }
+                            
+                            let userPrompt2 = "Мәтінді қазақ тілінен ағылшын тіліне аудар: '\(output2)'"
+                            
+                            
+                            OpenAIService1.generateResponse(for: userPrompt2) { result in
+                                switch result {
+                                case .success(let response):
+                                    print("Generated response: \(response)")
+                                    output = response
+                                case .failure(let error):
+                                    print("Error: \(error)")
+                                }
+                            }
+                            
+                        }
+
                         // eng to qaz
                         if(indexLang1==2 && indexLang2==0){
                             
+                            let userPrompt = "Түпнұсқа мәтінді толтырмай, мәтіннің ағылшын тілінен қазақ тіліне толық аудармасын ғана беріңіз: '\(input)'"
+
+                            OpenAIService1.generateResponse(for: userPrompt) { result in
+                                switch result {
+                                case .success(let response):
+                                    print("Generated response: \(response)")
+                                    output = response
+                                case .failure(let error):
+                                    print("Error: \(error)")
+                                }
+                            }
+                            
+                            translateKZtoQZ2()
                         }
-                        
+
                         
                     }, label: {
                         ButtonArrowDown()
@@ -247,6 +294,20 @@ struct Page3Translator: View {
         let targetCharacters: [String] = ["A", "Ä", "B", "V", "G", "Ğ", "D", "E", "Ö", "J", "Z", "İ", "İ", "K", "Q", "L", "M", "N", "Ñ", "O", "Ö", "P", "R", "S", "T", "U", "Ū", "Ü", "F", "H", "H", "S", "Ch", "Ş", "Ş", "", "Y", "I", "", "E", "İu", "İa", "a", "ä", "b", "v", "g", "ğ", "d", "e", "ö", "j", "z", "i", "i", "k", "q", "l", "m", "n", "ñ", "o", "ö", "p", "r", "s", "t", "u", "ū", "ü", "f", "h", "h", "s", "ch", "ş", "ş", "", "y", "ı", "", "e", "iu", "ia"]
         
         var resultString = input
+        
+        for (sourceChar, targetChar) in zip(sourceCharacters, targetCharacters) {
+            resultString = resultString.replacingOccurrences(of: String(sourceChar), with: String(targetChar))
+        }
+
+        output = resultString
+    }
+    
+    func translateKZtoQZ2(){
+        let sourceCharacters: [String] = ["А", "Ә", "Б", "В", "Г", "Ғ", "Д", "Е", "Ё", "Ж", "З", "И", "Й", "К", "Қ", "Л", "М", "Н", "Ң", "О", "Ө", "П", "Р", "С", "Т", "У", "Ұ", "Ү", "Ф", "Х", "Һ", "Ц", "Ч", "Ш", "Щ", "Ъ", "Ы", "І", "Ь", "Э", "Ю", "Я", "а", "ә", "б", "в", "г", "ғ", "д", "е", "ё", "ж", "з", "и", "й", "к", "қ", "л", "м", "н", "ң", "о", "ө", "п", "р", "с", "т", "у", "ұ", "ү", "ф", "х", "һ", "ц", "ч", "ш", "щ", "ъ", "ы", "і", "ь", "э", "ю", "я"]
+
+        let targetCharacters: [String] = ["A", "Ä", "B", "V", "G", "Ğ", "D", "E", "Ö", "J", "Z", "İ", "İ", "K", "Q", "L", "M", "N", "Ñ", "O", "Ö", "P", "R", "S", "T", "U", "Ū", "Ü", "F", "H", "H", "S", "Ch", "Ş", "Ş", "", "Y", "I", "", "E", "İu", "İa", "a", "ä", "b", "v", "g", "ğ", "d", "e", "ö", "j", "z", "i", "i", "k", "q", "l", "m", "n", "ñ", "o", "ö", "p", "r", "s", "t", "u", "ū", "ü", "f", "h", "h", "s", "ch", "ş", "ş", "", "y", "ı", "", "e", "iu", "ia"]
+        
+        var resultString = output
         
         for (sourceChar, targetChar) in zip(sourceCharacters, targetCharacters) {
             resultString = resultString.replacingOccurrences(of: String(sourceChar), with: String(targetChar))

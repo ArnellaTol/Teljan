@@ -46,10 +46,10 @@ struct Page2_1Dictionary: View {
         Word(kzWord: "Пластик", qsWord: "Plastik", enWord: "Plastic", kzDef: "әр түрлі нысандарда жұмсақ болғанда қалыптасуы мүмкін және әр түрлі қолданысы көп жасанды зат", qsDef: "är türlı nysandarda jūmsaq bolğanda qalyptasuy mümkın jäne är türlı qoldanysy köp jasandy zat", enDef: "an artificial substance that can be shaped when soft into many different forms and has many different uses"),
         Word(kzWord: "Логика", qsWord: "Logika", enWord: "Logic", kzDef: "ерекше ойлау бейнесі, әсіресе ақылға қонымды және ақыл-ойға негізделген", qsDef: "erekşe oilau beinesı, äsırese aqylğa qonymdy jäne aqyl-oiğa negızdelgen", enDef: "a particular way of thinking, especially one that is reasonable and based on good judgment"),
         Word(kzWord: "Сервер", qsWord: "Server", enWord: "Server", kzDef: "басқа компьютерлер ақпарат алатын орталық компьютер", qsDef: "basqa kömpüterler aqparat alatyn ortalyq kömpüter", enDef: "a central computer from which other computers get information"),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Кликбейт", qsWord: "Klikbeit", enWord: "Clickbait", kzDef: "назар аудару және келушілерді белгілі бір веб-параққа сілтеме бойынша өтуге ынталандыру үшін Интернетте орналастырылған материал", qsDef: "nazar audaru jäne keluşılerdı belgılı bır veb-paraqqa sılteme boiynşa ötuge yntalandyru üşın İnternette ornalastyrylğan material", enDef: "material put on the internet in order to attract attention and encourage visitors to click on a link to a particular web page"),
+        Word(kzWord: "Диод", qsWord: "Diod", enWord: "Diode", kzDef: "электр тогы бір бағытта ғана өтетін электрондық құрылғы", qsDef: "elektr togy bır bağytta ğana ötetın elektrondyq qūrylğy", enDef: "an electronic device in which the electric current passes in one direction only"),
+        Word(kzWord: "Геометрия", qsWord: "Geometria", enWord: "Geometry", kzDef: "нақты объектідегі немесе нысандағы сызықтардың, бұрыштардың және т.б. өлшемдері мен өзара байланысы", qsDef: "naqty obektıdegı nemese nysandağy syzyqtardyñ, būryştardyñ jäne t.b. ölşemderı men özara bailanysy", enDef: "the measurements and relationships of lines, angles, etc. in a particular object or shape"),
+        Word(kzWord: "Градиент", qsWord: "Gradient", enWord: "Gradient", kzDef: "көлбеу қаншалықты тік, жиі пайызбен көрсетіледі", qsDef: "kölbeu qanşalyqty tık, jiı paiyzben körsetıledı", enDef: "a measure of how steep a slope is, often expressed as a percentage")
 //        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
 //        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
 //        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
@@ -104,11 +104,12 @@ struct Page2_1Dictionary: View {
         Word(kzWord: "Өздесу", qsWord: "Özdesu", enWord: "", kzDef: "Өзіңмен кездесу, мысалы, киноға немесе мейрамханаға жалғыз бару", qsDef: "Özıñmen kezdesu, mysaly, kinoğa nemese meiramhanağa jalğyz baru", enDef: "Meeting yourself, for example, going alone to the cinema or to a restaurant"),
         Word(kzWord: "Шәйлендірілмеген ", qsWord: "Şäilendırılmegen", enWord: "", kzDef: "Таңертеңнен шай ішіп үлгермеген адам енді ұйқылы жүреді", qsDef: "Tañerteñnen şai ışıp ülgermegen adam endı ūiqyly jüredı", enDef: "A man who did not have time to drink tea in the morning, and now walks sleepy"),
         Word(kzWord: "Досхаббат", qsWord: "Doshabbat", enWord: "", kzDef: "Ерлердің берік достығы", qsDef: "Erlerdıñ berık dostyğy", enDef: "Strong male friendship"),
-        Word(kzWord: "Уикимақ ", qsWord: "Uikimaq ", enWord: "", kzDef: "Уикипедияда жазылғандардың барлығын шындыққа қабылдайтын адам", qsDef: "Uikipediada jazylğandardyñ barlyğyn şyndyqqa qabyldaityn adam", enDef: "The Man Who Takes Everything Wikipedia Says for the Truth"),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Уикимақ", qsWord: "Uikimaq", enWord: "", kzDef: "Уикипедияда жазылғандардың барлығын шындыққа қабылдайтын адам", qsDef: "Uikipediada jazylğandardyñ barlyğyn şyndyqqa qabyldaityn adam", enDef: "The Man Who Takes Everything Wikipedia Says for the Truth"),
+        Word(kzWord: "Қимастық", qsWord: "Qimastyq", enWord: "", kzDef: "Жақыныңды жоғалтқың келмейтін сезім", qsDef: "Jaqynyñdy joğaltqyñ kelmeitın sezım", enDef: "Feeling when you don't want to lose a loved one"),
+        Word(kzWord: "Ынтықтыру", qsWord: "Yntyqtyru", enWord: "", kzDef: "Бір нәрсеге құштарлық, құштарлық туғызу", qsDef: "Bır närsege qūştarlyq, qūştarlyq tuğyzu", enDef: "Provoke a passionate desire, a desire for something"),
+        Word(kzWord: "Жатырқау", qsWord: "Jatyrqau", enWord: "", kzDef: "Кішкентай бала басқаларды қабылдамағанда, олардан бас тартады, туыстарынан басқа итереді", qsDef: "Kışkentai bala basqalardy qabyldamağanda, olardan bas tartady, tuystarynan basqa iteredı", enDef: "When a baby rejects all others, turns away from them, pushes except relatives"),
+        Word(kzWord: "Зағыру", qsWord: "Zağyru", enWord: "", kzDef: "Ұзақ уақыт көрмеу немесе көрмеу", qsDef: "Ūzaq uaqyt körmeu nemese körmeu", enDef: "Do not see each other for a long time or never see"),
+        Word(kzWord: "Құсалау", qsWord: "Qūsalau", enWord: "", kzDef: "Сағынудан ауруға шалдығу мүмкін емес", qsDef: "Sağynudan auruğa şaldyğu mümkın emes", enDef: "Critically sick because of melancholy")
     ]
     
     var untranslatableEN: [Word] = [
@@ -142,22 +143,26 @@ struct Page2_1Dictionary: View {
         Word(kzWord: "", qsWord: "", enWord: "Jinx", kzDef: "Сәтсіздікке әкелетін адам немесе зат", qsDef: "Sätsızdıkke äkeletın adam nemese zat", enDef: "To bring bad luck in a mysterious way"),
         Word(kzWord: "", qsWord: "", enWord: "Shallow", kzDef: "Жоғарғы бөліктің немесе үстіңгі бөліктің және төменгі бөліктің арасында үлкен қашықтықтың болмауы", qsDef: "Joğarğy bölıktıñ nemese üstıñgı bölıktıñ jäne tömengı bölıktıñ arasynda ülken qaşyqtyqtyñ bolmauy", enDef: "Not having much distance between the top or surface and the bottom"),
         Word(kzWord: "", qsWord: "", enWord: "Bamboozle", kzDef: "Біреуді шатастыру, әсіресе алдау арқылы", qsDef: "Bıreudı şatastyru, äsırese aldau arqyly", enDef: "To confuse somebody, especially by tricking them"),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-        
+        Word(kzWord: "", qsWord: "", enWord: "Wanderlust", kzDef: "Саяхаттауға деген құштарлық", qsDef: "Saiahattauğa degen qūştarlyq", enDef: "A strong desire to travel"),
+        Word(kzWord: "", qsWord: "", enWord: "Mellifluous", kzDef: "Тәтті және тегіс естіледі; тыңдау өте жақсы", qsDef: "Tättı jäne tegıs estıledı; tyñdau öte jaqsy", enDef: "Sounding sweet and smooth; very pleasant to listen to"),
+        Word(kzWord: "", qsWord: "", enWord: "Defenestration", kzDef: "Терезеден біреуді лақтыру немесе итеріп шығару әрекеті", qsDef: "Terezeden bıreudı laqtyru nemese iterıp şyğaru äreketı", enDef: "The action of throwing or pushing someone out of a window"),
+        Word(kzWord: "", qsWord: "", enWord: "Petrichor", kzDef: "Құрғақ жерге жаңбыр түскенде пайда болатын иіс әдетте жағымды деп қабылданады", qsDef: "Qūrğaq jerge jañbyr tüskende paida bolatyn iıs ädette jağymdy dep qabyldanady", enDef: "The smell produced when rain falls on dry ground, usually experienced as being pleasant"),
+        Word(kzWord: "", qsWord: "", enWord: "Bungalow", kzDef: "Әдетте тек бір қабатты үй", qsDef: "Ädette tek bır qabatty üi", enDef: "A house that usually has only one storey"),
+        Word(kzWord: "", qsWord: "", enWord: "Whimsical", kzDef: "Күлкілі немесе тітіркендіретін әдеттен тыс және сәл әдіс", qsDef: "Külkılı nemese tıtırkendıretın ädetten tys jäne säl ädıs", enDef: "Unusual and strange in a way that might be funny or annoying"),
+        Word(kzWord: "", qsWord: "", enWord: "Nonchalan", kzDef: "Өздеріңізді жиі қызығушылық танытпайтындай немесе қамқорлық танытпайтындай сабырлы ұстаңыз", qsDef: "Özderıñızdı jiı qyzyğuşylyq tanytpaityndai nemese qamqorlyq tanytpaityndai sabyrly ūstañyz", enDef: "Behaving in a calm manner, often in a way that suggests you are not interested or do not care"),
+        Word(kzWord: "", qsWord: "", enWord: "Zeitgeist", kzDef: "Тарихтың нақты кезеңіне тән идеялар, сенімдер, сезімдердің жалпы жинағы", qsDef: "Tarihtyñ naqty kezeñıne tän ideialar, senımder, sezımderdıñ jalpy jinağy", enDef: "The general set of ideas, beliefs, feelings that is typical of a particular period in history"),
+        Word(kzWord: "", qsWord: "", enWord: "Quintessential", kzDef: "Бір нәрсенің ең типтік мысалы немесе ең маңызды бөлігі болу", qsDef: "Bır närsenıñ eñ tiptık mysaly nemese eñ mañyzdy bölıgı bolu", enDef: "Being the most typical example or most important part of something"),
+        Word(kzWord: "", qsWord: "", enWord: "Ineffable", kzDef: "Kөңіл-күй тудырады, әсіресе көңіл-күйді сипаттауға келмейді", qsDef: "Köñıl-küi tudyrady, äsırese köñıl-küidı sipattauğa kelmeidı", enDef: "Causing so much emotion, especially pleasure, that it cannot be described"),
+        Word(kzWord: "", qsWord: "", enWord: "Kerfuffle", kzDef: "Шу, толқу және дау", qsDef: "Şu, tolqu jäne dau", enDef: "Noise, excitement, and argument"),
+        Word(kzWord: "", qsWord: "", enWord: "Flummoxed", kzDef: "Сіз не істейтініңізді білмейсіз", qsDef: "Sız ne ısteitınıñızdı bılmeisız", enDef: "So confused that you do not know what to do"),
+        Word(kzWord: "", qsWord: "", enWord: "Mellowness", kzDef: "Жай-күйі немесе сапасы жұмсақ, босаңсыған немесе эмоциялық тұрғыдан тыныш болу", qsDef: "Jai-küiı nemese sapasy jūmsaq, bosañsyğan nemese emosialyq tūrğydan tynyş bolu", enDef: "A state or quality of being gentle, relaxed, or emotionally calm"),
+        Word(kzWord: "", qsWord: "", enWord: "Ephemeral", kzDef: "Tек қысқа уақытқа ғана", qsDef: "Tek qysqa uaqytqa ğana", enDef: "Lasting for only a short time"),
+        Word(kzWord: "", qsWord: "", enWord: "Zest", kzDef: "Энтузиазм, жігер, энергия және қызығушылық", qsDef: "Entuziazm, jıger, energia jäne qyzyğuşylyq", enDef: "Enthusiasm, eagerness, energy, and interest"),
+        Word(kzWord: "", qsWord: "", enWord: "Snafu", kzDef: "Жоспарланғандай ештеңе болмаған жағдай", qsDef: "Josparlanğandai eşteñe bolmağan jağdai", enDef: "A situation in which nothing has happened as planned"),
+        Word(kzWord: "", qsWord: "", enWord: "Peckish", kzDef: "Aздап ашаршылық", qsDef: "Azdap aşarşylyq", enDef: "Slightly hungry"),
+        Word(kzWord: "", qsWord: "", enWord: "Spork", kzDef: "Қасық пішінді, бірақ шанышқы сияқты үшкір бөліктері бар құрал", qsDef: "Qasyq pışındı, bıraq şanyşqy siaqty üşkır bölıkterı bar qūral", enDef: "A tool that has a shape like a spoon but with pointed parts like a fork"),
+        Word(kzWord: "", qsWord: "", enWord: "Pizzazz", kzDef: "Tірі және қызықты сапа немесе стиль", qsDef: "Tırı jäne qyzyqty sapa nemese stil", enDef: "А lively and exciting quality or style"),
+        Word(kzWord: "", qsWord: "", enWord: "Palindrome", kzDef: "Сол жақтан солға қарай да солға қарай да бірдей оқылатын сөз немесе сөйлем", qsDef: "Sol jaqtan solğa qarai da solğa qarai da bırdei oqylatyn söz nemese söilem", enDef: "A word or phrase that reads the same backwards as forwards")
     ]
     
     var idioms: [Word] = [
@@ -190,7 +195,7 @@ struct Page2_1Dictionary: View {
         Word(kzWord: "Шопақ құрлы көрмеу", qsWord: "Şopaq qūrly körmeu", enWord: "Fall on deaf ears", kzDef: "Ешкімге назар аудармаңыз", qsDef: "Eşkımge nazar audarmañyz", enDef: "To be ignored or not noticed by other people"),
         Word(kzWord: "Ғайып болу", qsWord: "Ğaiyp bolu", enWord: "Vanish into thin air", kzDef: "Кенеттен жоғалып кету", qsDef: "Kenetten joğalyp ketu", enDef: "To disappear suddenly and completely"),
         Word(kzWord: "Көз айырмау", qsWord: "Köz aiyrmau", enWord: "Look over (something)", kzDef: "Мұқият қараңыз", qsDef: "Mūqiat qarañyz", enDef: "To examine something to see how good, big, etc. it is"),
-        Word(kzWord: "Көз ілескенше", qsWord: "Köz ıleskenşe", enWord: "At once", kzDef: "Дереу; кідіріссіз", qsDef: "Dereu; kıdırıssız", enDef: "Immediately; without delay"),
+        Word(kzWord: "Көз ілескенше", qsWord: "Köz ıleskenşe", enWord: "At once", kzDef: "Дереу; кідіріссіз", qsDef: "Dereu; kıdırıssız", enDef: "Immediately; without delay")
     ]
     
     var modern: [Word] = [
@@ -216,10 +221,37 @@ struct Page2_1Dictionary: View {
         Word(kzWord: "Сапа", qsWord: "Sapa", enWord: "Quality", kzDef: "", qsDef: "", enDef: ""),
         Word(kzWord: "Көз", qsWord: "Köz", enWord: "Source", kzDef: "", qsDef: "", enDef: ""),
         Word(kzWord: "Асқарпаз", qsWord: "Asqarpaz", enWord: "Climber", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
-//        Word(kzWord: "", qsWord: "", enWord: "", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Шынжыр", qsWord: "Şynjyr", enWord: "Chain", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Үздіксіз", qsWord: "Üzdıksız", enWord: "Continuous", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Болжау", qsWord: "Boljau", enWord: "Forecasting", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Ақиқат", qsWord: "Aqiqat", enWord: "Ground Truth", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Индекстеу", qsWord: "İndeksteu", enWord: "Indexing", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Инфрақызыл", qsWord: "İnfraqyzyl", enWord: "Infrared", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Негіздеме", qsWord: "Negızdeme", enWord: "Justification", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жүктеу", qsWord: "Jükteu", enWord: "Load", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сомын", qsWord: "Somyn", enWord: "Nut", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Оңтайландыру", qsWord: "Oñtailandyru", enWord: "Optimization", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сауал", qsWord: "Saual", enWord: "Query", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Арақатынас", qsWord: "Araqatynas", enWord: "Ratio", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сенімділік", qsWord: "Senımdılık", enWord: "Reliability", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сыйақы", qsWord: "Syiaqy", enWord: "Reward", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Виртуалды Шындық", qsWord: "Virtualdy Şyndyq", enWord: "Virtual Reality", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Белгісіздік", qsWord: "Belgısızdık", enWord: "Uncertainty", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Баптау", qsWord: "Baptau", enWord: "Tuning", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Түйрегіш", qsWord: "Tüiregış", enWord: "Stud", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сауалнама", qsWord: "Saualnama", enWord: "Questionnaire", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Әдіс", qsWord: "Ädıs", enWord: "Method", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Дағдарыс", qsWord: "Dağdarys", enWord: "Crisis", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сарықисық", qsWord: "Saryqisyq", enWord: "Banan", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жасуша", qsWord: "Jasuşa", enWord: "Cell", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Ағза", qsWord: "Ağza", enWord: "Body", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Сілтеме", qsWord: "Sılteme", enWord: "Reference", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Делдал", qsWord: "Deldal", enWord: "Intermediary", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Жағдарыс", qsWord: "Jağdarys", enWord: "Situation", kzDef: "", qsDef: "", enDef: ""),
+        Word(kzWord: "Түпнұсқа", qsWord: "Tüpnūsqa", enWord: "Original", kzDef: "", qsDef: "", enDef: "")
     ]
+    
+    
     
     @State private var searchText = ""
     

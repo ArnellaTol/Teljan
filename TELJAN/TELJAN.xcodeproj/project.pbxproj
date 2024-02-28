@@ -25,6 +25,7 @@
 		0C84AD2E2AA49C6700B56D84 /* Page3Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD2D2AA49C6700B56D84 /* Page3Translator.swift */; };
 		0C84AD302AA4A26A00B56D84 /* Page4AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84AD2F2AA4A26A00B56D84 /* Page4AboutApp.swift */; };
 		0CA314902AD0618100775B95 /* QuestionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3148F2AD0618100775B95 /* QuestionButton.swift */; };
+		0CBE26AB2B8E5A2200A34972 /* testGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE26AA2B8E5A2200A34972 /* testGPT.swift */; };
 		0CBEC4F82AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4F62AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld */; };
 		0CBEC4FA2AADC13500C5AF8D /* DataBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4F92AADC13500C5AF8D /* DataBaseController.swift */; };
 		0CBEC4FC2AADE43D00C5AF8D /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBEC4FB2AADE43D00C5AF8D /* Extentions.swift */; };
@@ -75,6 +76,7 @@
 		0C84AD2D2AA49C6700B56D84 /* Page3Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3Translator.swift; sourceTree = "<group>"; };
 		0C84AD2F2AA4A26A00B56D84 /* Page4AboutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4AboutApp.swift; sourceTree = "<group>"; };
 		0CA3148F2AD0618100775B95 /* QuestionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionButton.swift; sourceTree = "<group>"; };
+		0CBE26AA2B8E5A2200A34972 /* testGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testGPT.swift; sourceTree = "<group>"; };
 		0CBEC4F72AADBF4300C5AF8D /* DataBaseModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataBaseModel.xcdatamodel; sourceTree = "<group>"; };
 		0CBEC4F92AADC13500C5AF8D /* DataBaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseController.swift; sourceTree = "<group>"; };
 		0CBEC4FB2AADE43D00C5AF8D /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				0CBEC4F62AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld */,
 				0CBEC4F92AADC13500C5AF8D /* DataBaseController.swift */,
 				0CBEC4FB2AADE43D00C5AF8D /* Extentions.swift */,
+				0CBE26AA2B8E5A2200A34972 /* testGPT.swift */,
 				0CD815162B1CC0B300F86CA9 /* GPT_Test.swift */,
 				0CD8151B2B1CD22500F86CA9 /* OpenAIService.swift */,
 			);
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CDABAD62AD9A07A008642B6 /* ButtonArrowDown.swift in Sources */,
+				0CBE26AB2B8E5A2200A34972 /* testGPT.swift in Sources */,
 				0CBEC4F82AADBF4300C5AF8D /* DataBaseModel.xcdatamodeld in Sources */,
 				0CBEC4FE2AADE4CD00C5AF8D /* Back.swift in Sources */,
 				0CBEC4FA2AADC13500C5AF8D /* DataBaseController.swift in Sources */,
@@ -533,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = arnella.Telzhan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -564,7 +568,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = arnella.Telzhan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -589,7 +593,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telzhan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Telzhan";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TELJAN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TELJAN";
 			};
 			name = Debug;
 		};
@@ -609,7 +613,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telzhan.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Telzhan";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TELJAN.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TELJAN";
 			};
 			name = Release;
 		};
